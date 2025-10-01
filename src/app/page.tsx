@@ -34,7 +34,7 @@ export default function Home() {
       price: "₹1599",
       badge: "Reports in 6 hours",
       bgColor: "from-gray-100 to-gray-50",
-      image: "/Bannerimg1.jpg",
+      image: "/banner4.jpg",
     },
     {
       id: 2,
