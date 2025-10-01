@@ -34,7 +34,7 @@ export default function Home() {
       price: "₹1599",
       badge: "Reports in 6 hours",
       bgColor: "from-gray-100 to-gray-50",
-      image: ""
+      image: "/Bannerimg1.jpg",
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ export default function Home() {
       badge: "120+ Parameters",
       description: "Cardiac Health | Cancer Markers | Zinc, Magnesium & more.",
       bgColor: "from-white to-gray-50",
-      image: "/banner2.jpg",
+      image: "/Bannerimg2.jpg",
       ribbonText: "Introducing"
     },
     {
@@ -55,7 +55,7 @@ export default function Home() {
       price: "₹2499",
       badge: "95+ Tests Included",
       bgColor: "from-blue-50 to-white",
-      image: "/banner3.jpg"
+      image: "/Bannerimg3.jpg",
     }
   ];
 
@@ -147,115 +147,123 @@ export default function Home() {
       name: 'Complete Blood Count (CBC)',
       price: '₹299',
       tests: '25 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <circle cx="50" cy="50" r="40" fill="white" opacity="0.2"/>
-          <path d="M50 20C33.43 20 20 33.43 20 50s13.43 30 30 30 30-13.43 30-30S66.57 20 50 20zm0 54c-13.23 0-24-10.77-24-24s10.77-24 24-24 24 10.77 24 24-10.77 24-24 24z" fill="white"/>
-          <circle cx="35" cy="45" r="4" fill="white"/>
-          <circle cx="50" cy="50" r="5" fill="white"/>
-          <circle cx="65" cy="45" r="4" fill="white"/>
-          <circle cx="42" cy="60" r="3" fill="white"/>
-          <circle cx="58" cy="60" r="3" fill="white"/>
-        </svg>
-      ),
+      // icon: (
+      //   <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+      //     <circle cx="50" cy="50" r="40" fill="white" opacity="0.2"/>
+      //     <path d="M50 20C33.43 20 20 33.43 20 50s13.43 30 30 30 30-13.43 30-30S66.57 20 50 20zm0 54c-13.23 0-24-10.77-24-24s10.77-24 24-24 24 10.77 24 24-10.77 24-24 24z" fill="white"/>
+      //     <circle cx="35" cy="45" r="4" fill="white"/>
+      //     <circle cx="50" cy="50" r="5" fill="white"/>
+      //     <circle cx="65" cy="45" r="4" fill="white"/>
+      //     <circle cx="42" cy="60" r="3" fill="white"/>
+      //     <circle cx="58" cy="60" r="3" fill="white"/>
+      //   </svg>
+      // ),
+      image: '/testimg6.jpg',
       gradient: 'from-[#a382cf] via-[#9370c9] to-[#835ec3]'
     },
     {
       name: 'Thyroid Profile',
       price: '₹399',
       tests: '3 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <path d="M50 25C40 25 35 30 35 35C35 40 40 45 50 55C60 45 65 40 65 35C65 30 60 25 50 25Z" fill="white" opacity="0.9"/>
-          <ellipse cx="42" cy="60" rx="8" ry="12" fill="white" opacity="0.8"/>
-          <ellipse cx="58" cy="60" rx="8" ry="12" fill="white" opacity="0.8"/>
-          <path d="M42 72C42 72 46 78 50 78C54 78 58 72 58 72" stroke="white" strokeWidth="3" fill="none"/>
-        </svg>
-      ),
+      // icon: (
+      //   <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+      //     <path d="M50 25C40 25 35 30 35 35C35 40 40 45 50 55C60 45 65 40 65 35C65 30 60 25 50 25Z" fill="white" opacity="0.9"/>
+      //     <ellipse cx="42" cy="60" rx="8" ry="12" fill="white" opacity="0.8"/>
+      //     <ellipse cx="58" cy="60" rx="8" ry="12" fill="white" opacity="0.8"/>
+      //     <path d="M42 72C42 72 46 78 50 78C54 78 58 72 58 72" stroke="white" strokeWidth="3" fill="none"/>
+      //   </svg>
+      // ),
+      image: '/testimg4.jpg',
       gradient: 'from-[#83c7bc] via-[#73b7ac] to-[#63a79c]'
     },
     {
       name: 'Lipid Profile',
       price: '₹449',
       tests: '8 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <path d="M50 25C50 25 35 35 35 50C35 65 42.5 75 50 75C57.5 75 65 65 65 50C65 35 50 25 50 25Z" fill="white" opacity="0.9"/>
-          <circle cx="50" cy="50" r="8" fill="white"/>
-          <path d="M45 45L55 55M55 45L45 55" stroke="#a382cf" strokeWidth="2"/>
-        </svg>
-      ),
+      // icon: (
+      //   <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+      //     <path d="M50 25C50 25 35 35 35 50C35 65 42.5 75 50 75C57.5 75 65 65 65 50C65 35 50 25 50 25Z" fill="white" opacity="0.9"/>
+      //     <circle cx="50" cy="50" r="8" fill="white"/>
+      //     <path d="M45 45L55 55M55 45L45 55" stroke="#a382cf" strokeWidth="2"/>
+      //   </svg>
+      // ),
+      image: '/testimg1.jpg',
       gradient: 'from-[#a382cf] via-[#9370c9] to-[#835ec3]'
     },
     {
       name: 'Vitamin D Test',
       price: '₹899',
       tests: '1 test',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <circle cx="50" cy="50" r="20" fill="white" opacity="0.9"/>
-          <circle cx="50" cy="50" r="12" fill="white"/>
-          {[...Array(12)].map((_, i) => {
-            const angle = (i * 30 * Math.PI) / 180;
-            const x1 = 50 + Math.cos(angle) * 25;
-            const y1 = 50 + Math.sin(angle) * 25;
-            const x2 = 50 + Math.cos(angle) * 35;
-            const y2 = 50 + Math.sin(angle) * 35;
-            return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="white" strokeWidth="3" strokeLinecap="round"/>;
-          })}
-        </svg>
-      ),
+      // icon: (
+      //   <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+      //     <circle cx="50" cy="50" r="20" fill="white" opacity="0.9"/>
+      //     <circle cx="50" cy="50" r="12" fill="white"/>
+      //     {[...Array(12)].map((_, i) => {
+      //       const angle = (i * 30 * Math.PI) / 180;
+      //       const x1 = 50 + Math.cos(angle) * 25;
+      //       const y1 = 50 + Math.sin(angle) * 25;
+      //       const x2 = 50 + Math.cos(angle) * 35;
+      //       const y2 = 50 + Math.sin(angle) * 35;
+      //       return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="white" strokeWidth="3" strokeLinecap="round"/>;
+      //     })}
+      //   </svg>
+      // ),
+      image: '/testimg2.jpg',
       gradient: 'from-[#83c7bc] via-[#73b7ac] to-[#63a79c]'
     },
     {
       name: 'Vitamin B12',
       price: '₹599',
       tests: '1 test',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <rect x="30" y="30" width="40" height="50" rx="8" fill="white" opacity="0.9"/>
-          <circle cx="50" cy="45" r="8" fill="white"/>
-          <circle cx="50" cy="65" r="6" fill="white"/>
-          <text x="50" y="50" fontSize="16" fill="#a382cf" textAnchor="middle" fontWeight="bold">B12</text>
-        </svg>
-      ),
+      // icon: (
+      //   <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+      //     <rect x="30" y="30" width="40" height="50" rx="8" fill="white" opacity="0.9"/>
+      //     <circle cx="50" cy="45" r="8" fill="white"/>
+      //     <circle cx="50" cy="65" r="6" fill="white"/>
+      //     <text x="50" y="50" fontSize="16" fill="#a382cf" textAnchor="middle" fontWeight="bold">B12</text>
+      //   </svg>
+      // ),
+      image: '/testimg3.jpg',
       gradient: 'from-[#a382cf] via-[#9370c9] to-[#835ec3]'
     },
     {
       name: 'HbA1c (Diabetes)',
       price: '₹349',
       tests: '1 test',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <path d="M50 30L35 45L50 60L65 45Z" fill="white" opacity="0.9"/>
-          <circle cx="50" cy="70" r="8" fill="white"/>
-          <path d="M40 50C40 50 45 55 50 55C55 55 60 50 60 50" stroke="white" strokeWidth="2" fill="none"/>
-        </svg>
-      ),
+      // icon: (
+      //   <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+      //     <path d="M50 30L35 45L50 60L65 45Z" fill="white" opacity="0.9"/>
+      //     <circle cx="50" cy="70" r="8" fill="white"/>
+      //     <path d="M40 50C40 50 45 55 50 55C55 55 60 50 60 50" stroke="white" strokeWidth="2" fill="none"/>
+      //   </svg>
+      // ),
+      image: '/testimg7.jpg',
       gradient: 'from-[#83c7bc] via-[#73b7ac] to-[#63a79c]'
     },
     {
       name: 'Liver Function Test',
       price: '₹499',
       tests: '11 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <path d="M35 40C35 40 40 30 50 30C60 30 65 40 65 40L70 60C70 60 65 75 50 75C35 75 30 60 30 60L35 40Z" fill="white" opacity="0.9"/>
-          <ellipse cx="45" cy="50" rx="5" ry="8" fill="white"/>
-          <ellipse cx="55" cy="50" rx="5" ry="8" fill="white"/>
-        </svg>
-      ),
+      // icon: (
+      //   <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+      //     <path d="M35 40C35 40 40 30 50 30C60 30 65 40 65 40L70 60C70 60 65 75 50 75C35 75 30 60 30 60L35 40Z" fill="white" opacity="0.9"/>
+      //     <ellipse cx="45" cy="50" rx="5" ry="8" fill="white"/>
+      //     <ellipse cx="55" cy="50" rx="5" ry="8" fill="white"/>
+      //   </svg>
+      // ),
+      image: '/testimg5.jpg',
       gradient: 'from-[#a382cf] via-[#9370c9] to-[#835ec3]'
     },
     {
       name: 'Kidney Function Test',
       price: '₹449',
       tests: '9 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <path d="M40 35C35 35 30 40 30 50C30 60 35 70 40 70C45 70 45 65 45 60C45 55 42 50 45 50C48 50 45 55 45 60C45 65 45 70 50 70C55 70 55 65 55 60C55 55 52 50 55 50C58 50 55 55 55 60C55 65 55 70 60 70C65 70 70 60 70 50C70 40 65 35 60 35C55 35 55 40 55 45C55 50 58 55 55 55C52 55 55 50 55 45C55 40 55 35 50 35C45 35 45 40 45 45C45 50 48 55 45 55C42 55 45 50 45 45C45 40 45 35 40 35Z" fill="white" opacity="0.9"/>
-        </svg>
-      ),
+      // icon: (
+      //   <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+      //     <path d="M40 35C35 35 30 40 30 50C30 60 35 70 40 70C45 70 45 65 45 60C45 55 42 50 45 50C48 50 45 55 45 60C45 65 45 70 50 70C55 70 55 65 55 60C55 55 52 50 55 50C58 50 55 55 55 60C55 65 55 70 60 70C65 70 70 60 70 50C70 40 65 35 60 35C55 35 55 40 55 45C55 50 58 55 55 55C52 55 55 50 55 45C55 40 55 35 50 35C45 35 45 40 45 45C45 50 48 55 45 55C42 55 45 50 45 45C45 40 45 35 40 35Z" fill="white" opacity="0.9"/>
+      //   </svg>
+      // ),
+      image: '/testimg2.jpg',
       gradient: 'from-[#83c7bc] via-[#73b7ac] to-[#63a79c]'
     },
     {
@@ -264,14 +272,7 @@ export default function Home() {
       originalPrice: '₹3574',
       discount: '66% Off',
       tests: '125 parameters',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <circle cx="50" cy="35" r="12" fill="white" opacity="0.9"/>
-          <path d="M50 47C40 47 35 52 35 57L35 75C35 75 40 80 50 80C60 80 65 75 65 75L65 57C65 52 60 47 50 47Z" fill="white" opacity="0.9"/>
-          <path d="M35 57L30 65L30 75" stroke="white" strokeWidth="3" fill="none"/>
-          <path d="M65 57L70 65L70 75" stroke="white" strokeWidth="3" fill="none"/>
-        </svg>
-      ),
+      image: '/testimg1.jpg',
       gradient: 'from-[#a382cf] via-[#9370c9] to-[#835ec3]'
     },
     {
@@ -280,93 +281,49 @@ export default function Home() {
       originalPrice: '₹4398',
       discount: '72% Off',
       tests: '125 parameters',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <circle cx="50" cy="35" r="12" fill="white" opacity="0.9"/>
-          <path d="M50 47C40 47 35 52 35 57L30 75C30 75 35 80 50 80C65 80 70 75 70 75L65 57C65 52 60 47 50 47Z" fill="white" opacity="0.9"/>
-          <circle cx="42" cy="60" r="3" fill="white"/>
-          <circle cx="58" cy="60" r="3" fill="white"/>
-        </svg>
-      ),
+      image: '/testimg2.jpg',
       gradient: 'from-[#83c7bc] via-[#73b7ac] to-[#63a79c]'
     },
     {
       name: 'Sexual Health Checkup',
       price: '₹799',
       tests: '15 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <path d="M50 30L40 50L50 70L60 50Z" fill="white" opacity="0.9"/>
-          <circle cx="50" cy="50" r="10" fill="white"/>
-          <path d="M35 50L25 50M75 50L65 50M50 35L50 25M50 75L50 65" stroke="white" strokeWidth="3"/>
-        </svg>
-      ),
+      image: '/testimg3.jpg',
       gradient: 'from-[#a382cf] via-[#9370c9] to-[#835ec3]'
     },
     {
       name: 'Fever Panel',
       price: '₹599',
       tests: '8 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <rect x="42" y="25" width="16" height="50" rx="8" fill="white" opacity="0.9"/>
-          <circle cx="50" cy="70" r="10" fill="white"/>
-          <rect x="46" y="40" width="8" height="25" fill="#a382cf"/>
-        </svg>
-      ),
+      image: '/testimg4.jpg',
       gradient: 'from-[#83c7bc] via-[#73b7ac] to-[#63a79c]'
     },
     {
       name: 'Allergy Panel',
       price: '₹1299',
       tests: '20 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <circle cx="50" cy="50" r="25" fill="white" opacity="0.3"/>
-          <circle cx="50" cy="50" r="18" fill="white" opacity="0.6"/>
-          <circle cx="50" cy="50" r="10" fill="white" opacity="0.9"/>
-          <path d="M50 30L50 70M30 50L70 50" stroke="white" strokeWidth="3"/>
-        </svg>
-      ),
+      image: '/testimg5.jpg',
       gradient: 'from-[#a382cf] via-[#9370c9] to-[#835ec3]'
     },
     {
       name: 'Bone Health Profile',
       price: '₹899',
       tests: '6 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <circle cx="35" cy="40" r="8" fill="white" opacity="0.9"/>
-          <circle cx="65" cy="60" r="8" fill="white" opacity="0.9"/>
-          <rect x="38" y="38" width="24" height="8" rx="4" fill="white" opacity="0.9" transform="rotate(30 50 50)"/>
-        </svg>
-      ),
+      image: '/testimg6.jpg',
       gradient: 'from-[#83c7bc] via-[#73b7ac] to-[#63a79c]'
     },
     {
       name: 'Heart Health Package',
       price: '₹1499',
       tests: '18 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <path d="M50 75C50 75 25 60 25 42C25 30 32 25 40 25C45 25 50 28 50 28C50 28 55 25 60 25C68 25 75 30 75 42C75 60 50 75 50 75Z" fill="white" opacity="0.9"/>
-          <path d="M40 40C40 40 45 45 50 50C55 45 60 40 60 40" stroke="#a382cf" strokeWidth="2" fill="none"/>
-        </svg>
-      ),
+      image: '/testimg7.jpg',
       gradient: 'from-[#a382cf] via-[#9370c9] to-[#835ec3]'
     },
     {
       name: 'Women Wellness Package',
       price: '₹1199',
       tests: '22 tests',
-      icon: (
-        <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
-          <circle cx="50" cy="40" r="15" fill="white" opacity="0.9"/>
-          <path d="M50 55L50 75M40 65L60 65" stroke="white" strokeWidth="4" strokeLinecap="round"/>
-          <circle cx="42" cy="38" r="3" fill="#83c7bc"/>
-          <circle cx="58" cy="38" r="3" fill="#83c7bc"/>
-        </svg>
-      ),
+      image: '/testimg1.jpg',
       gradient: 'from-[#83c7bc] via-[#73b7ac] to-[#63a79c]'
     },
   ];
@@ -388,11 +345,12 @@ export default function Home() {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#a382cf] to-[#83c7bc] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">P</span>
-              </div>
-              <span className="text-2xl font-bold text-gray-900">PathologyBook</span>
+            <div className="flex items-center gap-3">
+              <img
+                src="/lab logo.png"
+                alt="Access PathLab Logo"
+                className="h-12 md:h-14 w-auto object-contain"
+              />
             </div>
             <nav className="hidden md:flex gap-8">
               <a href="#tests" className="text-gray-700 hover:text-[#a382cf] transition-colors">Lab Tests</a>
@@ -426,20 +384,43 @@ export default function Home() {
                     }`}
                   >
                     <div className={`h-full bg-gradient-to-br ${banner.bgColor} relative overflow-hidden`}>
-                      {/* Purple/Teal Circle Background on Right */}
-                      <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-gradient-to-br from-[#a382cf] to-[#83c7bc] rounded-full translate-x-1/3 -translate-y-1/4 opacity-20" />
+                      {/* Purple/Teal Circle Background on Right - Enhanced */}
+                      <div className="absolute top-1/2 right-8 md:right-16 w-[320px] h-[320px] md:w-[380px] md:h-[380px] bg-gradient-to-br from-[#a382cf] via-[#9378c8] to-[#83c7bc] rounded-full -translate-y-1/2 opacity-30 shadow-2xl blur-sm"
+                        style={{ animation: 'pulse-glow 4s ease-in-out infinite' }}
+                      />
 
                       {/* Decorative Blur Elements */}
                       <div className="absolute top-10 left-10 w-32 h-32 bg-[#a382cf]/20 rounded-full blur-3xl" />
                       <div className="absolute bottom-20 left-20 w-48 h-48 bg-[#83c7bc]/15 rounded-full blur-3xl" />
 
-                      {/* Person Image on Right */}
-                      <div className="absolute right-0 top-0 bottom-0 w-1/2 md:w-2/5 flex items-center justify-center">
-                        <img
-                          src={banner.image}
-                          alt={banner.mainTitle}
-                          className="h-[90%] w-auto object-contain relative z-10"
-                        />
+                      {/* Person Image on Right - Circular */}
+                      <div className="absolute top-1/2 right-8 md:right-16 -translate-y-1/2 z-10">
+                        <div className="relative w-[280px] h-[280px] md:w-[340px] md:h-[340px]">
+                          {/* Circular Image Container with Border */}
+                          <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-white shadow-2xl hover:scale-105 transition-transform duration-500">
+                            <img
+                              src={banner.image}
+                              alt={banner.mainTitle}
+                              className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                            />
+                          </div>
+                          {/* Decorative Ring with Animation */}
+                          <div
+                            className="absolute inset-0 rounded-full border-2 border-[#a382cf]/40"
+                            style={{
+                              transform: 'scale(1.05)',
+                              animation: 'ring-pulse 3s ease-in-out infinite'
+                            }}
+                          />
+                          {/* Second Decorative Ring */}
+                          <div
+                            className="absolute inset-0 rounded-full border-2 border-[#83c7bc]/30"
+                            style={{
+                              transform: 'scale(1.12)',
+                              animation: 'ring-pulse 3s ease-in-out infinite 1.5s'
+                            }}
+                          />
+                        </div>
                       </div>
 
                       {/* Content */}
@@ -679,22 +660,31 @@ export default function Home() {
 
                 {/* Image Section with 3D Gradient */}
                 <div className="relative h-56 overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${test.gradient} opacity-95 group-hover:opacity-100 transition-all duration-700`}
+                  {/* Background Gradient - Lighter */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${test.gradient} opacity-30 group-hover:opacity-40 transition-all duration-700`}
                        style={{
                          transform: 'translateZ(20px)',
                          animation: 'gradient-shift 8s ease infinite',
                          backgroundSize: '200% 200%'
                        }} />
 
-                  {/* Floating Icon with 3D Effect */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="transform group-hover:scale-125 group-hover:rotate-12 transition-all duration-700 drop-shadow-2xl"
+                  {/* Floating Image with 3D Effect */}
+                  <div className="absolute inset-0 flex items-center justify-center p-6">
+                    <div className="relative w-full h-full transform group-hover:scale-110 transition-all duration-700"
                          style={{
                            animation: 'float 4s ease-in-out infinite',
-                           animationDelay: `${index * 0.2}s`,
-                           filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.2))'
+                           animationDelay: `${index * 0.2}s`
                          }}>
-                      {test.icon}
+                      {/* Circular Image Container */}
+                      <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/50 shadow-2xl">
+                        <img
+                          src={test.image}
+                          alt={test.name}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        />
+                        {/* Light Overlay Gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/10" />
+                      </div>
                     </div>
                   </div>
 
@@ -1070,40 +1060,62 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: '⚡',
+                image: '/testimg3.jpg',
                 title: 'Fast & Reliable',
-                description: 'Sample collection within 60 minutes and reports in just 6 hours'
+                description: 'Sample collection within 60 minutes and reports in just 6 hours',
+                bgColor: 'from-[#fef3c7] to-[#fde68a]'
               },
               {
-                icon: '✓',
+                image: '/testimg5.jpg',
                 title: 'Certified Labs',
-                description: 'NABL & CAP certified labs with 100% accurate results'
+                description: 'NABL & CAP certified labs with 100% accurate results',
+                bgColor: 'from-[#dbeafe] to-[#bfdbfe]'
               },
               {
-                icon: '👨‍⚕️',
+                image: '/testimg7.jpg',
                 title: 'Expert eMedics',
-                description: 'Trained professionals with 100+ hours of training for painless collection'
+                description: 'Trained professionals with 100+ hours of training for painless collection',
+                bgColor: 'from-[#f3e8ff] to-[#e9d5ff]'
               },
               {
-                icon: '🏠',
+                image: '/testimg2.jpg',
                 title: 'Home Collection',
-                description: 'Convenient sample collection at your doorstep at your preferred time'
+                description: 'Convenient sample collection at your doorstep at your preferred time',
+                bgColor: 'from-[#ccf2ed] to-[#b3e5df]'
               },
               {
-                icon: '💰',
+                image: '/testimg4.jpg',
                 title: 'Affordable Pricing',
-                description: 'Best prices with regular discounts and offers on all tests'
+                description: 'Best prices with regular discounts and offers on all tests',
+                bgColor: 'from-[#fce7f3] to-[#fbcfe8]'
               },
               {
-                icon: '📱',
+                image: '/testimg1.jpg',
                 title: 'Digital Reports',
-                description: 'Get reports on WhatsApp and email with easy access anytime'
+                description: 'Get reports on WhatsApp and email with easy access anytime',
+                bgColor: 'from-[#dbeafe] to-[#bfdbfe]'
               },
             ].map((feature, index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow">
-                <div className="text-5xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+              <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                {/* Image Section */}
+                <div className="relative h-48 overflow-hidden">
+                  {/* Background Image */}
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  {/* Gradient Overlay - Light */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgColor} opacity-40 group-hover:opacity-30 transition-opacity duration-500`} />
+                  {/* Bottom Shadow */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                </div>
+
+                {/* Content Section */}
+                <div className="p-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#a382cf] transition-colors">{feature.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -1178,11 +1190,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-[#a382cf] to-[#83c7bc] rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">P</span>
-                </div>
-                <span className="text-xl font-bold">PathologyBook</span>
+              <div className="flex items-center gap-3 mb-4">
+                <img
+                  src="/lab logo.png"
+                  alt="Access PathLab Logo"
+                  className="h-10 md:h-12 w-auto object-contain brightness-0 invert"
+                />
               </div>
               <p className="text-gray-400">Your trusted partner for accurate and fast diagnostic services.</p>
             </div>
@@ -1208,13 +1221,13 @@ export default function Home() {
               <h4 className="font-bold mb-4">Contact Us</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>📞 1800-123-4567</li>
-                <li>📧 info@pathologybook.com</li>
+                <li>📧 info@accesspathlab.com</li>
                 <li>📍 Bangalore, India</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 PathologyBook. All rights reserved.</p>
+            <p>&copy; 2025 Access PathLab. All rights reserved.</p>
           </div>
         </div>
       </footer>

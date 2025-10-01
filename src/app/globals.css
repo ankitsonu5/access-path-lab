@@ -87,6 +87,17 @@ html {
   }
 }
 
+@keyframes ring-pulse {
+  0%, 100% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+}
+
 /* 3D Card Effects */
 .card-3d {
   transform-style: preserve-3d;
