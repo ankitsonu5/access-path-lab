@@ -7,6 +7,69 @@ export default function Home() {
   const [currentTestSlide, setCurrentTestSlide] = useState(0);
   const [currentFeaturedSlide, setCurrentFeaturedSlide] = useState(0);
 
+  const featuredTests = [
+    {
+      id: 1,
+      title: "Get all your vitals tested",
+      description: "Find out your vitamin levels. Monitor your sugar and cholesterol",
+      trust: "Trusted by 1M+ customers",
+      packageName: "Full Body Checkup - Essential",
+      originalPrice: "₹2945",
+      price: "₹1599",
+      discount: "70% Off",
+      parameters: "91 parameters included",
+      reportTime: "Reports within 6 hours",
+      image: "/testimg1.jpg",
+      badge: "Checkup",
+      slideIndicator: "1/4"
+    },
+    {
+      id: 2,
+      title: "Monitor your heart health",
+      description: "Test silent issues with advanced cardiac test and cut medical bills",
+      trust: "Trusted by 1M+ customers",
+      packageName: "Full Body Checkup - Comprehensive",
+      originalPrice: "₹12505",
+      price: "₹3699",
+      discount: "70% Off",
+      parameters: "105 parameters included",
+      reportTime: "Reports within 14 hours",
+      image: "/testimg2.jpg",
+      badge: "Checkup",
+      slideIndicator: "2/4"
+    },
+    {
+      id: 3,
+      title: "Sexual Health monitoring",
+      description: "Regular testing is essential for sexually active folks. Test discreetly",
+      trust: "Trusted by 1M+ customers",
+      packageName: "STD Test Checkup - Advanced",
+      originalPrice: "₹9199",
+      price: "₹3999",
+      discount: "56% Off",
+      parameters: "9 parameters included",
+      reportTime: "Reports within 14 hours",
+      image: "/testimg3.jpg",
+      badge: "Checkup",
+      slideIndicator: "4/4"
+    },
+    {
+      id: 4,
+      title: "Get your thyroid levels tested",
+      description: "Keep your thyroid and overall health in check with regular monitoring",
+      trust: "Trusted by 1M+ customers",
+      packageName: "Thyroid Function Test (TFT)",
+      originalPrice: "₹599",
+      price: "₹400",
+      discount: "32% Off",
+      parameters: "3 tests included",
+      reportTime: "Reports within 6 hours",
+      image: "/testimg4.jpg",
+      badge: "Test",
+      slideIndicator: "3/4"
+    }
+  ];
+
   // Auto-play for test carousel
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,7 +86,7 @@ export default function Home() {
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [featuredTests.length]);
 
   const banners = [
     {
@@ -70,77 +133,6 @@ export default function Home() {
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % banners.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length);
-  };
-
-  const featuredTests = [
-    {
-      id: 1,
-      title: "Get all your vitals tested",
-      description: "Find out your vitamin levels. Monitor your sugar and cholesterol",
-      trust: "Trusted by 1M+ customers",
-      packageName: "Full Body Checkup - Essential",
-      originalPrice: "₹2945",
-      price: "₹1599",
-      discount: "70% Off",
-      parameters: "91 parameters included",
-      reportTime: "Reports within 6 hours",
-      image: "/test1.jpg",
-      badge: "Checkup",
-      slideIndicator: "1/4"
-    },
-    {
-      id: 2,
-      title: "Monitor your heart health",
-      description: "Test silent issues with advanced cardiac test and cut medical bills",
-      trust: "Trusted by 1M+ customers",
-      packageName: "Full Body Checkup - Comprehensive",
-      originalPrice: "₹12505",
-      price: "₹3699",
-      discount: "70% Off",
-      parameters: "105 parameters included",
-      reportTime: "Reports within 14 hours",
-      image: "/test2.jpg",
-      badge: "Checkup",
-      slideIndicator: "2/4"
-    },
-    {
-      id: 3,
-      title: "Sexual Health monitoring",
-      description: "Regular testing is essential for sexually active folks. Test discreetly",
-      trust: "Trusted by 1M+ customers",
-      packageName: "STD Test Checkup - Advanced",
-      originalPrice: "₹9199",
-      price: "₹3999",
-      discount: "56% Off",
-      parameters: "9 parameters included",
-      reportTime: "Reports within 14 hours",
-      image: "/test3.jpg",
-      badge: "Checkup",
-      slideIndicator: "4/4"
-    },
-    {
-      id: 4,
-      title: "Get your thyroid levels tested",
-      description: "Keep your thyroid and overall health in check with regular monitoring",
-      trust: "Trusted by 1M+ customers",
-      packageName: "Thyroid Function Test (TFT)",
-      originalPrice: "₹599",
-      price: "₹400",
-      discount: "32% Off",
-      parameters: "3 tests included",
-      reportTime: "Reports within 6 hours",
-      image: "/test4.jpg",
-      badge: "Test",
-      slideIndicator: "3/4"
-    }
-  ];
 
   const labTests = [
     {
@@ -814,7 +806,7 @@ export default function Home() {
                 Most Booked<br />Checkups
               </h2>
               <p className="text-gray-600 text-lg mb-8 max-w-md">
-                India's fastest AI powered & temperature controlled supply chain to collect and test your blood in freshest state.
+                India&apos;s fastest AI powered & temperature controlled supply chain to collect and test your blood in freshest state.
               </p>
               <button className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg hover:border-[#a382cf] hover:text-[#a382cf] transition-all font-semibold">
                 View All Checkups
@@ -857,7 +849,7 @@ export default function Home() {
               {/* Women's Health - Bottom Left */}
               <div className="bg-gradient-to-br from-[#83c7bc] to-[#6fb8ad] rounded-3xl p-6 text-white flex flex-col justify-between hover:shadow-2xl transition-all cursor-pointer group hover:scale-105">
                 <div className="flex justify-between items-start">
-                  <h3 className="text-lg font-bold">Women's<br />Health</h3>
+                  <h3 className="text-lg font-bold">Women&apos;s<br />Health</h3>
                   <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-all">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"/>
@@ -1234,39 +1226,4 @@ export default function Home() {
     </div>
   );
 }
-
-const features = [
-  { icon: "🏥", title: "Certified Labs", desc: "NABL-grade processes & calibrated analyzers" },
-  { icon: "🧪", title: "Home Collection", desc: "Trained phlebotomists at your doorstep" },
-  { icon: "⚡", title: "Fast Reports", desc: "Digital reports within 24–48 hours" },
-  { icon: "💳", title: "Transparent Pricing", desc: "No hidden charges. Clear bills." },
-];
-
-const tests = [
-  { name: "Complete Blood Count (CBC)", desc: "General health check", price: 299 },
-  { name: "Thyroid Profile (T3, T4, TSH)", desc: "Thyroid screening", price: 499 },
-  { name: "Vitamin D (25-OH)", desc: "Bone & immunity", price: 699 },
-  { name: "Diabetes Package", desc: "FBS, PPBS, HbA1c", price: 799 },
-  { name: "Lipid Profile", desc: "Heart health", price: 599 },
-  { name: "Liver Function Test (LFT)", desc: "Liver assessment", price: 749 },
-];
-
-const steps = [
-  { title: "Choose test or package", desc: "Search and select your required test." },
-  { title: "Home sample collection", desc: "Expert visits your address at the chosen time." },
-  { title: "Get digital reports", desc: "Access reports online; consult with doctors." },
-];
-
-const testimonials = [
-  { name: "Aarav", city: "Delhi", quote: "Home collection was on time and very hygienic." },
-  { name: "Mira", city: "Bengaluru", quote: "Reports arrived the next day with detailed insights." },
-  { name: "Rohit", city: "Mumbai", quote: "Great prices and professional staff." },
-];
-
-const faqs = [
-  { q: "Do you provide home sample collection?", a: "Yes, trained phlebotomists visit your address at your chosen time." },
-  { q: "When will I receive my reports?", a: "Typically within 24–48 hours depending on the test." },
-  { q: "Are your labs certified?", a: "Yes, we follow NABL-grade processes and ICMR guidelines." },
-  { q: "How can I book a test?", a: "Use the Book a Home Collection form above or call us." },
-];
 
